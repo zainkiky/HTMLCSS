@@ -15,7 +15,6 @@ This project is designed to teach HTML and CSS concepts through interactive less
 Term 2/
 ├── index.html                         # Main landing page
 ├── style.html                         # Styles for landing page
-
 ├── Lesson1/
 │   ├── learning/
 │   │   ├── index.html                # HTML Text Elements guide
@@ -23,7 +22,6 @@ Term 2/
 │   └── project/
 │       ├── index.html                # HTML Text Elements project
 │       └── style.css                 # Styles for Lesson 1 project
-
 ├── Lesson2/
 │   ├── learning/
 │   │   ├── index.html                # CSS Learning guide
@@ -31,7 +29,6 @@ Term 2/
 │   └── project/
 │       ├── index.html                # CSS Learning project
 │       └── style.css                 # Styles for Lesson 2 project
-
 └── Lesson3/
     ├── learning/
     │   ├── index.html                # Styling Images in CSS guide
