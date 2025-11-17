@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styling Images in CSS - Educational Guide</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Styling Images in CSS</h1>
+        <p>Learn how to enhance and customize images with CSS properties</p>
+    </header>
+
+    <main>
+        <div class="topic-container">
+            <h2>1. Display Flex</h2>
+            <div class="property-explanation">
+                <p><strong>display: flex;</strong> creates a flexible container that allows you to easily align and
+                    distribute elements, including images.</p>
+                <p>Key properties when using flex:</p>
+                <ul>
+                    <li><code>justify-content</code>: Aligns items horizontally</li>
+                    <li><code>align-items</code>: Aligns items vertically</li>
+                    <li><code>flex-direction</code>: Sets the direction of flex items</li>
+                </ul>
+            </div>
+
+            <div class="example-container">
+                <div class="example-box">
+                    <h3>Without Flexbox</h3>
+                    <div>
+                        <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'><rect width='100' height='100' fill='%23FF9800'/></svg>"
+                            alt="Image 1" width="80" height="80">
+                        <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'><rect width='100' height='100' fill='%234CAF50'/></svg>"
+                            alt="Image 2" width="80" height="80">
+                        <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'><rect width='100' height='100' fill='%232196F3'/></svg>"
+                            alt="Image 3" width="80" height="80">
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h3>With Flexbox</h3>
+                    <div class="flex-container">
+                        <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'><rect width='100' height='100' fill='%23FF9800'/></svg>"
+                            alt="Image 1" width="80" height="80" class="flex-item">
+                        <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'><rect width='100' height='100' fill='%234CAF50'/></svg>"
+                            alt="Image 2" width="80" height="80" class="flex-item">
+                        <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'><rect width='100' height='100' fill='%232196F3'/></svg>"
+                            alt="Image 3" width="80" height="80" class="flex-item">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="topic-container">
+            <h2>2. Border</h2>
+            <div class="property-explanation">
+                <p><strong>border</strong> adds a visible edge around an image. You can customize the border with:</p>
+                <ul>
+                    <li>Border width (e.g., 2px, thick)</li>
+                    <li>Border style (e.g., solid, dashed, dotted)</li>
+                    <li>Border color (e.g., red, #FF0000)</li>
+                </ul>
+            </div>
+
+            <div class="example-container">
+                <div class="example-box">
+                    <h3>No Border</h3>
+                    <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'><rect width='100' height='100' fill='%239C27B0'/></svg>"
+                        alt="No Border" width="100" height="100">
+                </div>
+                <div class="example-box">
+                    <h3>With Border</h3>
+                    <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'><rect width='100' height='100' fill='%239C27B0'/></svg>"
+                        alt="With Border" width="100" height="100" class="border-example">
+                </div>
+            </div>
+        </div>
+
+        <div class="topic-container">
+            <h2>3. Border-radius</h2>
+            <div class="property-explanation">
+                <p><strong>border-radius</strong> rounds the corners of an image. You can specify:</p>
+                <ul>
+                    <li>A single value for all corners (e.g., 10px)</li>
+                    <li>Different values for horizontal and vertical radii (e.g., 10px / 20px)</li>
+                    <li>Individual values for each corner (e.g., 10px 5px 10px 5px)</li>
+                </ul>
+                <p>Setting border-radius to 50% creates a circular image.</p>
+            </div>
+
+            <div class="example-container">
+                <div class="example-box">
+                    <h3>Square Image</h3>
+                    <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'><rect width='100' height='100' fill='%23FF5722'/></svg>"
+                        alt="Square" width="100" height="100">
+                </div>
+                <div class="example-box">
+                    <h3>Rounded Corners</h3>
+                    <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'><rect width='100' height='100' fill='%23FF5722'/></svg>"
+                        alt="Rounded Corners" width="100" height="100" class="border-radius-example">
+                </div>
+                <div class="example-box">
+                    <h3>Circular Image</h3>
+                    <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'><rect width='100' height='100' fill='%23FF5722'/></svg>"
+                        alt="Circular" width="100" height="100" class="rounded-corners">
+                </div>
+            </div>
+        </div>
+
+        <div class="topic-container">
+            <h2>4. Box-shadow</h2>
+            <div class="property-explanation">
+                <p><strong>box-shadow</strong> adds shadow effects around an image. It accepts multiple values:</p>
+                <ul>
+                    <li>Horizontal offset (e.g., 5px)</li>
+                    <li>Vertical offset (e.g., 10px)</li>
+                    <li>Blur radius (e.g., 8px)</li>
+                    <li>Spread radius (e.g., 2px)</li>
+                    <li>Color (e.g., rgba(0,0,0,0.3))</li>
+                </ul>
+            </div>
+
+            <div class="example-container">
+                <div class="example-box">
+                    <h3>No Shadow</h3>
+                    <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'><rect width='100' height='100' fill='%23795548'/></svg>"
+                        alt="No Shadow" width="100" height="100">
+                </div>
+                <div class="example-box">
+                    <h3>With Shadow</h3>
+                    <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'><rect width='100' height='100' fill='%23795548'/></svg>"
+                        alt="With Shadow" width="100" height="100" class="image-shadow">
+                </div>
+            </div>
+        </div>
+
+        <div class="topic-container">
+            <h2>5. Opacity</h2>
+            <div class="property-explanation">
+                <p><strong>opacity</strong> controls the transparency of an image. Values range from 0 (completely
+                    transparent) to 1 (completely opaque).</p>
+            </div>
+
+            <div class="example-container">
+                <div class="example-box">
+                    <h3>Full Opacity</h3>
+                    <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'><rect width='100' height='100' fill='%233F51B5'/></svg>"
+                        alt="Full Opacity" width="100" height="100">
+                </div>
+                <div class="example-box">
+                    <h3>Translucent</h3>
+                    <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'><rect width='100' height='100' fill='%233F51B5'/></svg>"
+                        alt="Translucent" width="100" height="100" class="opacity-example">
+                </div>
+            </div>
+        </div>
+
+        <div class="topic-container">
+            <h2>6. Image Background</h2>
+            <div class="property-explanation">
+                <p>Instead of using an <code>&lt;img&gt;</code> tag, you can use CSS background properties to place
+                    images:</p>
+                <ul>
+                    <li><code>background-image</code>: Sets the image</li>
+                    <li><code>background-size</code>: Controls how the image scales</li>
+                    <li><code>background-position</code>: Sets the position of the image</li>
+                    <li><code>background-repeat</code>: Defines if and how the image repeats</li>
+                </ul>
+            </div>
+
+            <div class="example-box">
+                <h3>Background Image Example</h3>
+                <div class="background-image-example"></div>
+            </div>
+        </div>
+
+        <div class="topic-container">
+            <h2>Additional Image Styling Properties</h2>
+            <div class="property-explanation">
+                <p>Beyond the requested properties, there are other useful CSS properties for styling images:</p>
+            </div>
+
+            <div class="image-comparison">
+                <div class="comparison-item">
+                    <h3>Object Fit</h3>
+                    <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'><rect width='100' height='100' fill='%23E91E63'/><text x='50' y='50' fill='white' font-size='14' text-anchor='middle'>IMG</text></svg>"
+                        alt="Object Fit" width="80" height="60" style="object-fit: cover; width: 80px; height: 60px;">
+                    <p>Covers container while maintaining aspect ratio</p>
+                </div>
+
+                <div class="comparison-item">
+                    <h3>Hover Effects</h3>
+                    <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'><rect width='100' height='100' fill='%23FF9800'/><text x='50' y='50' fill='white' font-size='14' text-anchor='middle'>HOVER</text></svg>"
+                        alt="Hover Effect" width="80" height="80" class="hover-effect">
+                    <p>Try hovering over the image!</p>
+                </div>
+
+                <div class="comparison-item">
+                    <h3>Filters</h3>
+                    <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 10px;">
+                        <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='50' height='50' viewBox='0 0 50 50'><rect width='50' height='50' fill='%239C27B0'/><text x='25' y='25' fill='white' font-size='8' text-anchor='middle'>IMG</text></svg>"
+                            alt="Original" width="50" height="50" title="Original">
+                        <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='50' height='50' viewBox='0 0 50 50'><rect width='50' height='50' fill='%239C27B0'/><text x='25' y='25' fill='white' font-size='8' text-anchor='middle'>IMG</text></svg>"
+                            alt="Grayscale" width="50" height="50" class="grayscale" title="Grayscale">
+                        <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='50' height='50' viewBox='0 0 50 50'><rect width='50' height='50' fill='%239C27B0'/><text x='25' y='25' fill='white' font-size='8' text-anchor='middle'>IMG</text></svg>"
+                            alt="Blur" width="50" height="50" class="blur" title="Blur">
+                        <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='50' height='50' viewBox='0 0 50 50'><rect width='50' height='50' fill='%239C27B0'/><text x='25' y='25' fill='white' font-size='8' text-anchor='middle'>IMG</text></svg>"
+                            alt="Brightness" width="50" height="50" class="brightness" title="Brightness">
+                    </div>
+                    <p>Various filter effects (grayscale, blur, brightness)</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="topic-container">
+            <h2>Complete Example</h2>
+            <div class="property-explanation">
+                <p>Here's a combined example using multiple properties together:</p>
+            </div>
+
+            <div class="example-container">
+                <div class="example-box">
+                    <h3>Basic Image</h3>
+                    <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'><rect width='100' height='100' fill='%234CAF50'/><circle cx='50' cy='50' r='30' fill='%232196F3'/></svg>"
+                        alt="Basic" width="100" height="100">
+                </div>
+
+                <div class="example-box">
+                    <h3>Styled Image</h3>
+                    <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'><rect width='100' height='100' fill='%234CAF50'/><circle cx='50' cy='50' r='30' fill='%232196F3'/></svg>"
+                        alt="Styled" width="100" height="100"
+                        style="border: 3px solid #FF5722; border-radius: 20px; box-shadow: 0 8px 16px rgba(0,0,0,0.3); opacity: 0.9;">
+                </div>
+
+                <div class="example-box">
+                    <h3>Advanced Styled Image</h3>
+                    <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'><rect width='100' height='100' fill='%234CAF50'/><circle cx='50' cy='50' r='30' fill='%232196F3'/></svg>"
+                        alt="Advanced Styled" width="100" height="100"
+                        style="border: 2px dashed #9C27B0; border-radius: 50%; box-shadow: 0 0 20px rgba(156, 39, 176, 0.6); opacity: 0.85; filter: contrast(120%); transition: all 0.3s ease;">
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer style="text-align: center; margin-top: 30px; padding: 20px; color: #666;">
+        <p>Lesson 3 - Styling Images in CSS</p>
+    </footer>
+</body>
+
+</html>

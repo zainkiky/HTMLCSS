@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction to CSS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Introduction to CSS</h1>
+        <p>This page demonstrates CSS concepts: Inline CSS, Internal CSS, Box Model, and CSS Selectors</p>
+    </header>
+
+    <main>
+        <!-- INLINE CSS SECTION -->
+        <div class="topic-container" id="inline-css">
+            <h2>1. Inline CSS</h2>
+
+            <div class="documentation">
+                <p><strong>Documentation:</strong> Inline CSS is applied directly to an HTML element using the style
+                    attribute. It has the highest specificity and overrides other CSS rules.</p>
+            </div>
+
+            <div class="example">
+                <h3>Inline CSS Examples:</h3>
+                <p style="color: red; font-size: 18px;">This paragraph has inline CSS - red color and 18px font size</p>
+                <p style="background-color: yellow; padding: 10px; border: 2px solid blue;">This paragraph has inline
+                    CSS -
+                    yellow background, blue border, and padding</p>
+                <span style="font-weight: bold; text-decoration: underline;">This span has inline CSS styling</span>
+            </div>
+
+            <div class="example">
+                <h3>HTML Code for Inline CSS:</h3>
+                <pre><code>&lt;p style="color: red; font-size: 18px;"&gt;This paragraph has inline CSS - red color and 18px font size&lt;/p&gt;
+&lt;p style="background-color: yellow; padding: 10px; border: 2px solid blue;"&gt;This paragraph has inline CSS - yellow background, blue border, and padding&lt;/p&gt;
+&lt;span style="font-weight: bold; text-decoration: underline;"&gt;This span has inline CSS styling&lt;/span&gt;</code></pre>
+            </div>
+        </div>
+
+        <!-- INTERNAL CSS SECTION -->
+        <div class="topic-container" id="internal-css">
+            <h2>2. Internal CSS</h2>
+
+            <div class="documentation">
+                <p><strong>Documentation:</strong> Internal CSS is defined within the &lt;style&gt; tag in the HTML
+                    document's &lt;head&gt; section. It applies to the entire HTML document.</p>
+            </div>
+
+            <div class="example">
+                <h3>Internal CSS Examples:</h3>
+                <p>This paragraph is styled by the internal CSS in the &lt;head&gt; section.</p>
+                <p class="example-internal">This paragraph has a class that's styled by internal CSS.</p>
+                <div id="internal-example">This div is styled by an ID selector defined in internal CSS.</div>
+            </div>
+
+            <div class="example">
+                <h3>HTML Code for Internal CSS:</h3>
+                <pre><code>&lt;head&gt;
+    &lt;style&gt;
+        p {
+            color: #2c3e50;
+            font-family: Arial, sans-serif;
+        }
+        .example-internal {
+            background-color: #dfe6e9;
+            padding: 10px;
+        }
+        #internal-example {
+            background-color: #fd79a8;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+        }
+    &lt;/style&gt;
+&lt;/head&gt;</code></pre>
+            </div>
+        </div>
+
+        <!-- BOX MODEL SECTION -->
+        <div class="topic-container boxmodel" id="box-model">
+            <h2>3. CSS Box Model</h2>
+
+            <div class="documentation">
+                <p><strong>Documentation:</strong> The CSS box model describes how every HTML element is represented as
+                    a
+                    rectangular box with four areas:</p>
+                <ul>
+                    <li><strong>Content:</strong> The actual content of the element</li>
+                    <li><strong>Padding:</strong> Space between the content and the border</li>
+                    <li><strong>Border:</strong> The border that goes around the padding and content</li>
+                    <li><strong>Margin:</strong> Space outside the border</li>
+                </ul>
+            </div>
+
+            <div class="example">
+                <h3>Box Model Visualization:</h3>
+                <div class="box-model-container">
+                    <div class="box-model-box">
+                        Content Area
+                    </div>
+                </div>
+            </div>
+
+            <div class="example">
+                <h3>Box Model Properties Table:</h3>
+                <table>
+                    <tr>
+                        <th>Property</th>
+                        <th>Description</th>
+                        <th>Example</th>
+                    </tr>
+                    <tr>
+                        <td>Content</td>
+                        <td>The actual content of the element (text, images, etc.)</td>
+                        <td style="background-color: #a29bfe;">The text "Content Area" in the blue box</td>
+                    </tr>
+                    <tr>
+                        <td>Padding</td>
+                        <td>Space between the content and the border (15px in example)</td>
+                        <td style="background-color: #fdcb6e;">The space around the content</td>
+                    </tr>
+                    <tr>
+                        <td>Border</td>
+                        <td>The border around the padding (5px solid border in example)</td>
+                        <td style="background-color: #e17055;">The blue border (5px solid)</td>
+                    </tr>
+                    <tr>
+                        <td>Margin</td>
+                        <td>Space outside the border (20px in example)</td>
+                        <td style="background-color: #6c5ce7;">The space between the box and surrounding elements</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="example">
+                <h3>HTML Code for Box Model:</h3>
+                <pre><code>&lt;div style="background-color: #dfe6e9; padding: 20px;"&gt;
+    &lt;div style="background-color: #74b9ff; 
+                 width: 200px; height: 100px;
+                 margin: 20px; 
+                 padding: 15px; 
+                 border: 5px solid #0984e3;
+                 color: white;
+                 text-align: center;
+                 line-height: 100px;"&gt;
+        Content Area
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+            </div>
+        </div>
+
+        <!-- CSS SELECTORS SECTION -->
+        <div class="topic-container" id="selectors">
+            <h2>4. CSS Selectors</h2>
+
+            <div class="documentation">
+                <p><strong>Documentation:</strong> CSS selectors are patterns used to select HTML elements to style.
+                    Here
+                    are the main types of CSS selectors:</p>
+            </div>
+
+            <div class="example">
+                <h3>CSS Selectors Types:</h3>
+
+                <h4>4.1. Element Selector</h4>
+                <p>This is styled by the element selector (all p tags).</p>
+
+                <h4>4.2. Class Selector</h4>
+                <p class="class-selector-example">This is styled by the class selector (class="class-selector-example").
+                </p>
+
+                <h4>4.3. ID Selector</h4>
+                <p id="id-selector-example">This is styled by the ID selector (id="id-selector-example").</p>
+
+                <h4>4.4. Universal Selector</h4>
+                <p>All elements have box-sizing: border-box (universal selector *)</p>
+
+                <h4>4.5. Descendant Selector</h4>
+                <div class="documentation">
+                    <p>This paragraph is inside a div with class "documentation" and is styled by descendant selector.
+                    </p>
+                </div>
+
+                <h4>4.6. Child Selector</h4>
+                <div class="child-example">
+                    <span>This span is a direct child and styled by child selector.</span>
+                    <div>
+                        <span>This span is not a direct child and not affected by child selector.</span>
+                    </div>
+                </div>
+
+                <h4>4.7. Adjacent Sibling Selector</h4>
+                <p>This is the first paragraph (not affected by adjacent sibling selector).</p>
+                <p>This paragraph comes immediately after the first paragraph, so it's styled by adjacent sibling
+                    selector.
+                </p>
+
+                <h4>4.8. Attribute Selector</h4>
+                <a href="http://example.com">Link with href containing "example"</a><br>
+                <a href="other-link.html">Link without "example" in href</a>
+
+                <h4>4.9. Pseudo-class Selector</h4>
+                <p>This is the first paragraph in the section (styled by :first-child).</p>
+                <p>This is another paragraph (not a first-child).</p>
+
+                <h4>4.10. Pseudo-element Selector</h4>
+                <p>The first letter of this paragraph is styled differently by ::first-letter pseudo-element.</p>
+
+                <h4>4.11. Grouping Selector</h4>
+                <p>This paragraph is styled by the grouping selector.</p>
+                <code>This code element is also styled by the grouping selector.</code>
+            </div>
+
+            <div class="example">
+                <h3>Complete CSS Selectors Code Example:</h3>
+                <pre><code>/* Element Selector */
+p {
+    color: #2c3e50;
+}
+
+/* Class Selector */
+.class-selector-example {
+    background-color: #a29bfe;
+    padding: 8px;
+    border-radius: 4px;
+}
+
+/* ID Selector */
+#id-selector-example {
+    background-color: #fd79a8;
+    color: white;
+    padding: 8px;
+    border-radius: 4px;
+}
+
+/* Universal Selector */
+* {
+    box-sizing: border-box;
+}
+
+/* Descendant Selector */
+.documentation p {
+    font-style: italic;
+    color: #e17055;
+}
+
+/* Child Selector */
+.child-example &gt; span {
+    background-color: #74b9ff;
+    color: white;
+    padding: 3px 6px;
+    border-radius: 3px;
+}
+
+/* Adjacent Sibling Selector */
+.example p + p {
+    background-color: #ffeaa7;
+    padding: 5px;
+    border-left: 3px solid #e17055;
+}
+
+/* Attribute Selector */
+a[href*="example"] {
+    color: #00b894;
+    font-weight: bold;
+}
+
+/* Pseudo-class Selector */
+.example p:first-child {
+    font-weight: bold;
+    background-color: #fab1a0;
+}
+
+/* Pseudo-element Selector */
+.example p::first-letter {
+    font-size: 1.8em;
+    color: #e17055;
+    font-weight: bold;
+}
+
+/* Grouping Selector */
+code, pre {
+    background-color: #2d3436;
+    color: #fff;
+    padding: 2px 5px;
+    border-radius: 3px;
+}</code></pre>
+            </div>
+
+            <div class="example">
+                <h3>Selector Specificity Comparison:</h3>
+                <table>
+                    <tr>
+                        <th>Selector Type</th>
+                        <th>Specificity Value</th>
+                        <th>Example</th>
+                    </tr>
+                    <tr>
+                        <td>Inline CSS</td>
+                        <td>1000</td>
+                        <td>style="color: red;"</td>
+                    </tr>
+                    <tr>
+                        <td>ID Selector</td>
+                        <td>0100</td>
+                        <td>#example</td>
+                    </tr>
+                    <tr>
+                        <td>Class Selector</td>
+                        <td>0010</td>
+                        <td>.example</td>
+                    </tr>
+                    <tr>
+                        <td>Element Selector</td>
+                        <td>0001</td>
+                        <td>p, div, span</td>
+                    </tr>
+                    <tr>
+                        <td>Universal Selector</td>
+                        <td>0000</td>
+                        <td>*</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <!-- SUMMARY SECTION -->
+        <div class="topic-container">
+            <h2>5. Summary</h2>
+            <div class="documentation">
+                <h3>Key Takeaways:</h3>
+                <ul>
+                    <li><strong>Inline CSS:</strong> Applied with style attribute, has highest specificity</li>
+                    <li><strong>Internal CSS:</strong> Defined in &lt;style&gt; tag in &lt;head&gt;, applies to entire
+                        document</li>
+                    <li><strong>CSS Box Model:</strong> Content + Padding + Border + Margin defines every element's box
+                    </li>
+                    <li><strong>CSS Selectors:</strong> Various ways to select elements including element, class, ID,
+                        attribute, pseudo-class, and more</li>
+                    <li><strong>Specificity:</strong> Inline > ID > Class > Element > Universal, determines which styles
+                        are
+                        applied</li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <footer style="text-align: center; margin-top: 30px; padding: 20px; color: #666;">
+        <p>Lesson 2 - Introduction to CSS</p>
+    </footer>
+</body>
+
+</html>
